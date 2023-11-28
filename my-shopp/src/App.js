@@ -21,7 +21,6 @@ function App() {
     </Routes>
     <SideBar/>
     <Blog/>
-    <Contact/>
     <Footer/>
    </Router>
   );
