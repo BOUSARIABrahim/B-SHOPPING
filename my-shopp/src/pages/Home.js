@@ -3,6 +3,12 @@ import React, { useContext } from 'react';
 import { ProductContext } from '../contexts/ProductContext'
 import Product from '../components/Product'
 import Hero from '../components/Hero'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Blog from '../components/Blog';
+import Contact from '../components/Contact';
+import SideBar from '../components/Sidebar';
+
 function Home() {
   // get the products
   const { products } = useContext(ProductContext);
@@ -13,6 +19,7 @@ function Home() {
   )
   return (
     <div>
+      <Header/>
       <Hero/>
       <section className='py-16'>
         <div className='container mx-auto'>
@@ -24,7 +31,10 @@ function Home() {
           </div>
         </div>
       </section>
-
+      <SideBar/>
+      <Blog/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
